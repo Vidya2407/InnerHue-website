@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(
+        270deg,
+        #fde7f3,
+        #e8f8f2,
+        #ece9ff,
+        #fff1e6
+    );
+    background-size: 400% 400%;
+    animation: auraFlow 18s ease infinite;
+    color:#2b2b2b;
+}
+
+
+.container{
+    max-width:700px;
+    margin:auto;
+    padding:70px 40px;
+    background:rgba(255,255,255,0.9);
+    backdrop-filter: blur(18px);
+    border-radius:24px;
+    box-shadow:0 25px 70px rgba(0,0,0,0.12);
+    border:1px solid rgba(255,255,255,0.6);
+
+}
+
+
+
+/* HEADER */
+
+header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+header h1{
+    font-size:48px;
+    font-weight:600;
+    letter-spacing:-1px;
+}
+
+section{
+    margin-top:40px;
+}
+
+
+.tagline{
+    margin-top:12px;
+    color:#7a7a7a;
+    font-size:18px;
+}
+
+
+/* MOODS */
+
+.mood-section{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.moods{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.mood{
+    border:none;
+    padding:12px 18px;
+    border-radius:20px;
+    background:#f8d7da;
+    cursor:pointer;
+    transition: all 0.25s ease;
+opacity:0.6;
+
+}
+
+.mood:nth-child(2){
+    background:#d8f3dc;
+}
+
+.mood:nth-child(3){
+    background:#e2d5f1;
+}
+
+.mood:nth-child(4){
+    background:#ffe5d9;
+}
+
+.mood:hover{
+    transform:translateY(-3px);
+    opacity:1;
+
+}
+
+/* JOURNAL */
+
+.journal{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-bottom:50px;
+}
+
+textarea{
+    padding:15px;
+    border-radius:12px;
+    border:1px solid #eee;
+    resize:none;
+    height:120px;
+}
+
+.save-btn{
+    border:none;
+    padding:14px;
+    border-radius:12px;
+    background:#f8d7da;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.save-btn:hover{
+    background:#f1bfc5;
+}
+
+/* HISTORY */
+
+.history h2{
+    margin-bottom:20px;
+}
+
+.entries{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+@keyframes auraFlow{
+
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.entry-card{
+    background:#ffffff;
+    padding:18px;
+    border-radius:14px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
+}
+
+.Happy{
+    background:#ffe0e6;
+}
+
+.Calm{
+    background:#d8f3dc;
+}
+
+.Low{
+    background:#e6e6fa;
+}
+
+.Stressed{
+    background:#ffe5d9;
+}
+
+.delete-btn{
+    margin-top:10px;
+    border:none;
+    padding:6px 12px;
+    border-radius:8px;
+    background:#ffd6d6;
+    cursor:pointer;
+    font-size:12px;
+}
+
+.delete-btn:hover{
+    background:#ffb3b3;
+}

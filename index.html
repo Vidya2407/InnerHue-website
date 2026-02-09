@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHue</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Logo / Heading -->
+    <header>
+        <h1>InnerHue</h1>
+        <p class="tagline">Track your emotions. Understand yourself.</p>
+    </header>
+
+    <!-- Mood Selector -->
+    <section class="mood-section">
+        <h2>How are you feeling today?</h2>
+
+        <div class="moods">
+            <button class="mood" data-mood="Happy">😊 Happy</button>
+<button class="mood" data-mood="Calm">😌 Calm</button>
+<button class="mood" data-mood="Low">😔 Low</button>
+<button class="mood" data-mood="Stressed">😣 Stressed</button>
+
+        </div>
+    </section>
+
+    <!-- Journal -->
+    <section class="journal">
+        <textarea placeholder="What influenced your mood today?"></textarea>
+        <button class="save-btn">Save Entry</button>
+    </section>
+
+    <!-- History -->
+    <section class="history">
+        <h2>Your Reflections</h2>
+        <div class="entries">
+            <!-- Cards will come here later using JS -->
+        </div>
+    </section>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
