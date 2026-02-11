@@ -1,1 +1,1 @@
-auto deploy trigger
+auto-deploy trigger
