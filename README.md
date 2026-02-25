@@ -6,8 +6,14 @@ The goal of InnerHue is to encourage self-awareness, emotional clarity, and ment
 
 ---
 
-## 🚀 Live Demo
-🔗 http://43.205.206.77/
+## 🌍 Live Demo
+🔗 https://inner-hue-website.vercel.app/
+
+## 🚀 CI/CD & Cloud Deployment
+Implemented GitHub Actions pipeline to automate SSH-based deployment 
+to AWS EC2 (Apache server).
+
+Later transitioned to Vercel for production optimization and improved availability.
 
 ---
 
